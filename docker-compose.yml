@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  api:
+    build: .
+    environment:
+      PORT: ":8081"
+      CONTENT: "<h1>Hello World</h1>"
+    ports:
+      - 8081:8081
+      
